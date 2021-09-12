@@ -18,5 +18,9 @@
   "homepage": "https://github.com/smithy545/flatland#readme",
   "devDependencies": {
     "@types/node": "^16.9.1"
+  },
+  "dependencies": {
+    "@reactivex/rxjs": "^6.6.7",
+    "rxjs": "^7.3.0"
   }
 }

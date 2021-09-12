@@ -1,6 +1,6 @@
-import fs from "fs";
-import http from "http";
-import path from "path";
+import http = require("http");
+import fs = require("fs");
+import path = require("path");
 
 const staticBasePath = '../shared';
 
@@ -21,7 +21,7 @@ const server = http.createServer(function (req, res) {
         return res.end();
     })
 });
-const port = 80;
-server.listen(80);
+const port = process.env.PORT || 80;
+server.listen(port);
 
-console.log("Server started");
+console.log("Server started on port " + port);
