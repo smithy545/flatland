@@ -1,5 +1,4 @@
-console.log("test game");
-
+console.log("Setting socket callbacks...");
 
 function main() {
     const canvas = document.querySelector("#gameCanvas");
@@ -15,7 +14,6 @@ function main() {
 }
 
 window.onload = main;
-
 
 let socket = new WebSocket("ws://192.168.0.29:99");
 
@@ -39,3 +37,5 @@ socket.onclose = function(evt) {
 socket.onerror = function(err) {
     console.error(`WebSocket error: ${err}`);
 };
+
+console.log("Set.");
